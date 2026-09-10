@@ -2,8 +2,8 @@
 #
 #   brew install --cask --no-quarantine laboef1900/tap/exif-stamp
 cask "exif-stamp" do
-  version "1.1.0"
-  sha256 "698f66fab31ff656f8a4bafba6f4735c726928c87999020e9c3c2d2663e939e6"
+  version "1.1.1"
+  sha256 "0f14dce441b4e43130f024fae688d91d2c232789470a7cd790a080af932166a4"
 
   url "https://github.com/laboef1900/exif-stamp/releases/download/v#{version}/Exif.Stamp.dmg"
   name "Exif Stamp"
@@ -21,8 +21,8 @@ cask "exif-stamp" do
   ]
 
   caveats <<~EOS
-    Exif Stamp is unsigned. Install with --no-quarantine, or on first launch
-    right-click the app → Open.
+    Exif Stamp is self-signed, not notarized. Install with --no-quarantine,
+    or on first launch right-click the app → Open.
 
     RAW writeback needs ExifTool:  brew install exiftool
   EOS
